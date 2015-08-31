@@ -2,15 +2,16 @@
 require(['angular'], function () {
 	//var ngApp = angular.module('ngApp',['ngRoute']);
 	var ngApp = angular.module('ngApp',[]);
-	ngApp.directive('hello', function () {
+	ngApp.directive('header', function () {
 		return {
 			restrict: 'A',
-			templateUrl: 'header.html',
-			controller: 'CountryListCtrl'
+			templateUrl: 'header.html'
 		}
-	});
-	ngApp.controller('CountryListCtrl', function ($scope, $http){
-		console.log('13585575688')
+	}).directive('footer', function () {
+		return {
+			restrict: 'A',
+			templateUrl: 'footer.html'
+		}
 	});
 	ngApp.controller('NameCtrl', function ($scope) {
 		$scope.wahaha = function () {
