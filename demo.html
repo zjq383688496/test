@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="js/require.js" data-main="js/config"></script>
+	<!--<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jend.js"></script>
+	<script src="js/angular.js"></script>
+	<script src="js/angular-route.min.js"></script>-->
+	<!--<script src="js/index.js"></script>-->
+	<script>
+	/*var ngApp = angular.module('ngApp',['ngRoute']);
+	console.log(ngApp)
+	ngApp.config(function($routeProvider) {
+	$routeProvider.
+		when('/', {
+			templateUrl: 'header.html',
+				controller: 'CountryListCtrl'
+			}).
+			otherwise({
+				redirectTo: '/'
+			});
+	});
+
+	ngApp.controller('CountryListCtrl', function ($scope, $http){
+		alert(1234)
+	});*/
+	require(['index']);
+	</script>
+</head>
+<body ng-app="ngApp">
+
+<div hello></div>
+
+<div class="container" ng-view></div>
+
+</body>
+</html>
